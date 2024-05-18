@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer.CustomerAddOrderActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/food_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="28sp"
+        android:text="Hotdog"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/food_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/number_layout"
+
+        app:boxCornerRadiusBottomEnd="10dp"
+
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+
+        android:layout_margin="15dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Nechta"
+            android:textSize="24sp"
+            android:inputType="none"
+
+            android:id="@+id/its_number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/number_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/location_layout"
+
+        app:boxCornerRadiusBottomEnd="10dp"
+
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+
+        android:layout_margin="15dp"
+        app:layout_constraintVertical_chainStyle="packed"
+       style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/ko_cha_nomi"
+            android:textSize="20sp"
+            android:inputType="none"
+            android:id="@+id/customer_location"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:boxCornerRadiusBottomEnd="10dp"
+
+        android:layout_margin="15dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/home_number_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/phone_number_layout"
+
+        app:layout_constraintVertical_chainStyle="packed"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Telfon nomer"
+            android:textSize="20sp"
+            android:inputType="phone"
+            android:id="@+id/phone_number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintTop_toBottomOf="@id/location_layout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:boxCornerRadiusBottomEnd="10dp"
+
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+
+        android:layout_margin="15dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:id="@+id/home_number_layout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:hint="Uy raqami"
+            android:textSize="20sp"
+            android:id="@+id/home_number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 donasi 10000 so'm"
+        app:layout_constraintTop_toBottomOf="@id/phone_number_layout"
+        app:layout_constraintLeft_toLeftOf="@id/phone_number_layout"
+        android:layout_margin="15dp"
+        android:textSize="18sp"
+        android:id="@+id/payment_for_a_piece"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Umumiy narx"
+        android:id="@+id/text_overall_payment"
+        app:layout_constraintTop_toBottomOf="@id/payment_for_a_piece"
+        app:layout_constraintLeft_toLeftOf="@id/payment_for_a_piece"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/text_overall_payment"
+        app:layout_constraintTop_toTopOf="@id/text_overall_payment"
+        app:layout_constraintBottom_toBottomOf="@id/text_overall_payment"
+        android:textSize="18sp"
+        android:id="@+id/overall_payment"
+        android:layout_marginStart="10dp"
+        android:text="30000 so'm"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/finish_order"
+        app:layout_constraintTop_toBottomOf="@id/text_overall_payment"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+android:backgroundTint="@color/button"
+        android:text="Buyurtma berish"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

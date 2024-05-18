@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/order_style"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_item_food_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="8dp"
+            android:text="Hot Dog"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 00 so'm"
+            android:textSize="20sp"
+            android:id="@+id/order_item_food_cost"
+            app:layout_constraintTop_toBottomOf="@id/order_item_food_name"
+            android:layout_margin="4dp"
+            app:layout_constraintLeft_toLeftOf="@+id/order_item_food_name"/>
+
+        <TextView
+            android:id="@+id/order_item_food_number"
+            android:layout_width="45dp"
+            android:layout_height="26dp"
+            android:text="15 ta"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="@id/order_item_food_cost"
+            app:layout_constraintTop_toBottomOf="@id/order_item_food_cost" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xoji ota 273-uy"
+            app:layout_constraintTop_toBottomOf="@id/order_item_food_number"
+            app:layout_constraintLeft_toLeftOf="@id/order_item_food_number"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingBottom="10dp"
+            android:id="@+id/order_item_food_location"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qabul qilish"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cancel"
+            android:id="@+id/receive"
+            android:layout_margin="8dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rad etish"
+            android:textSize="16sp"
+            android:id="@+id/cancel"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/receive"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

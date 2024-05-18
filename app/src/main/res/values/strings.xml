@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">FixedDastavka</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ko_cha_nomi">Ko\'cha nomi</string>
+    <string-array name="cost_array">
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>
+    </string-array>
+    <string-array name="foodType">
+        <item>HotDog</item>
+        <item>Burger</item>
+        <item>KFC</item>
+    </string-array>
+    <string-array name="customer_location">
+        <item>Hoji Ota</item>
+        <item>Obisyo</item>
+        <item>Esanabod</item>
+        <item>Qumariq</item>
+        <item>QumQishloq</item>
+        <item>Garbobo</item>
+        <item>Ko\'salar</item>
+
+        <item>So\'filar</item>
+    </string-array>
+    <string-array name="food_number">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+</resources>

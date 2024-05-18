@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:background="@drawable/order_style"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_item_food_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="8dp"
+            android:text="Hot Dog"
+            android:textColor="@color/button"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cost_additional"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/button"
+            app:layout_constraintTop_toBottomOf="@id/order_item_food_name"
+            app:layout_constraintLeft_toLeftOf="@id/order_item_food_name"
+            app:layout_constraintBottom_toTopOf="@id/order_item_food_number"
+            android:text="Narxi:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 00 so'm"
+
+            android:textColor="@color/black"
+            android:layout_marginStart="4dp"
+            android:textSize="20sp"
+            android:id="@+id/order_item_food_cost"
+            app:layout_constraintTop_toBottomOf="@id/order_item_food_name"
+            android:layout_margin="4dp"
+            app:layout_constraintLeft_toRightOf="@id/cost_additional"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yegulik soni:"
+            android:textStyle="bold"
+            android:textColor="@color/button"
+            app:layout_constraintTop_toBottomOf="@id/cost_additional"
+            app:layout_constraintLeft_toLeftOf="@id/cost_additional"
+            android:textSize="20sp"
+            android:id="@+id/number_additional"
+            app:layout_constraintBottom_toTopOf="@id/order_item_food_location"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 ta"
+
+            app:layout_constraintTop_toBottomOf="@id/order_item_food_cost"
+            app:layout_constraintLeft_toRightOf="@id/number_additional"
+            android:textSize="20sp"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/black"
+            android:id="@+id/order_item_food_number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/location_additional"
+            app:layout_constraintTop_toBottomOf="@id/number_additional"
+            app:layout_constraintBottom_toTopOf="@id/customer_phone_number"
+            android:textSize="20sp"
+
+            android:textColor="@color/button"
+            android:textStyle="bold"
+            android:text="Manzil:"
+            app:layout_constraintLeft_toLeftOf="@id/number_additional"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xoji ota "
+
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/order_item_food_number"
+            app:layout_constraintLeft_toRightOf="@id/location_additional"
+            android:textSize="20sp"
+            android:layout_marginStart="4dp"
+            android:id="@+id/order_item_food_location"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/location_additional"
+            app:layout_constraintBottom_toTopOf="@id/customer_home_Number"
+            app:layout_constraintLeft_toLeftOf="@id/location_additional"
+            android:id="@+id/phoneNumber_additional"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            android:textColor="@color/button"
+            android:text="Telefon Raqam:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintTop_toBottomOf="@id/order_item_food_location"
+            app:layout_constraintLeft_toRightOf="@id/phoneNumber_additional"
+
+            android:textColor="@color/black"
+            android:text="+998910446710"
+            android:textSize="20sp"
+
+            android:id="@+id/customer_phone_number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/phoneNumber_additional"
+            app:layout_constraintBottom_toTopOf="@id/totalPayment"
+            app:layout_constraintLeft_toLeftOf="@id/phoneNumber_additional"
+            android:id="@+id/homeNumberAdditional"
+            android:textStyle="bold"
+            android:textSize="20sp"
+
+            android:textColor="@color/button"
+            android:text="Uy raqami:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/customer_phone_number"
+            android:text="273"
+
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@id/homeNumberAdditional"
+            android:layout_marginStart="4dp"
+
+            android:id="@+id/customer_home_Number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/homeNumberAdditional"
+            app:layout_constraintLeft_toLeftOf="@id/homeNumberAdditional"
+
+
+            android:textSize="20sp"
+
+            android:textColor="@color/button"
+            android:textStyle="bold"
+            android:id="@+id/totalCostAdditional"
+            android:text="Umumiy Narx:"/>
+
+        <TextView
+            android:id="@+id/totalPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="32222"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintLeft_toRightOf="@id/totalCostAdditional"
+
+            app:layout_constraintTop_toBottomOf="@id/customer_home_Number" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
